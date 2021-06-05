@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+*,
+*::before,
+*::after,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+$light-mode-text: hsl(200, 15%, 8%);
+$light-mode-bg: hsl(0, 0%, 98%);
+$light-mode-el: hsl(0, 0%, 100%);
+$dark-mode-text: hsl(0, 0%, 100%);
+$dark-mode-bg: hsl(207, 26%, 17%);
+$dark-mode-el: hsl(209, 23%, 22%);
+.hidden {
+  display: none;
+}
+.transform {
+  transform: rotate(180deg);
+}
+.light-mode {
+  color: $light-mode-text;
+  transition: 250ms;
+  header,
+  input,
+  #continents,
+  .box,
+  .each,
+  .back,
+  .borders {
+    color: $light-mode-text;
+    background-color: $light-mode-el;
+    transition: 250ms;
+  }
+  main {
+    background-color: $light-mode-bg;
+    transition: 250ms;
+  }
+  .ionicon path,
+  .error {
+    fill: none;
+    stroke: $light-mode-text;
+    transition: 250ms;
+  }
+  input::placeholder {
+    color: $light-mode-text;
+  }
+  .ionicon_one path {
+    color: $light-mode-text;
+    transition: 250ms;
+  }
+  .each li:hover {
+    background-color: $light-mode-bg;
+  }
+}
+.dark-mode {
+  color: $dark-mode-text;
+  transition: 250ms;
+  header,
+  input,
+  #continents,
+  .box,
+  .each,
+  .back,
+  .borders {
+    background-color: $dark-mode-el;
+    color: $dark-mode-text;
+    transition: 250ms;
+  }
+  main {
+    background-color: $dark-mode-bg;
+    transition: 250ms;
+  }
+  .ionicon path,
+  .error {
+    fill: $dark-mode-text;
+    transition: 250ms;
+  }
+  input::placeholder {
+    color: $dark-mode-text;
+    transition: 250ms;
+  }
+  .ionicon_one path {
+    color: $dark-mode-text;
+    transition: 250ms;
+  }
+  .each li:hover {
+    background-color: $dark-mode-bg;
+  }
+}

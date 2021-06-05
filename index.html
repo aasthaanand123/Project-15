@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest API</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="light-mode">
+    <header>
+      <ul>
+        <li class="heading">Where in the world?</li>
+        <li class="mode">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <title>Moon</title>
+            <path
+              d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+          </svg>
+          <span>Dark Mode</span>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="inputs">
+        <label for="country" class="country">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon_one"
+            viewBox="0 0 512 512"
+          >
+            <title>Search</title>
+            <path
+              d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+              fill="none"
+              stroke="currentColor"
+              stroke-miterlimit="10"
+              stroke-width="32"
+            />
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M338.29 338.29L448 448"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon__five"
+            viewBox="0 0 512 512"
+          >
+            <title>Close</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+          <input type="text" placeholder="Search for a country..." />
+        </label>
+        <div class="ul_select">
+          <div class="heading_ul" id="continents">Filter by Region</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon__three"
+            viewBox="0 0 512 512"
+          >
+            <title>Chevron Down</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="48"
+              d="M112 184l144 144 144-144"
+            />
+          </svg>
+          <ul class="each hidden">
+            <li class="item">Africa</li>
+            <li class="item">America</li>
+            <li class="item">Asia</li>
+            <li class="item">Europe</li>
+            <li class="item">Oceania</li>
+          </ul>
+        </div>
+      </div>
+      <div class="error hidden">No countries found</div>
+      <div class="container"></div>
+
+      <div class="description_country hidden"></div>
+    </main>
+  </body>
+</html>
