@@ -1,10 +1,15 @@
 //dark-light mode toggle
 let modeChange = document.querySelector(".mode");
 let body = document.querySelector("body");
-
+let modes = document.querySelector(".modes");
 modeChange.addEventListener("click", function () {
   body.classList.toggle("dark-mode");
   body.classList.toggle("light-mode");
+  if (body.classList.contains("dark-mode")) {
+    modes.textContent = "Light Mode";
+  } else if (body.classList.contains("light-mode")) {
+    modes.textContent = "Dark Mode";
+  }
 });
 //on loading display of all countries
 //function for creating element
