@@ -21,7 +21,7 @@ let createElements = function (countries) {
     el.innerHTML = `
                 <img src=${country.flag} alt="flag"/>
                 
-                <h1 class="country__name">${country.name}<h1>
+                <h1 class="country__name">${country.name}</h1>
                 <h3>Population: <span>${country.population}</span></h3>
                 <h3 >Region: <span class="country__region">${country.region}</span></h3>
                 <h3>Capital: <span>${country.capital}</span></h3>    
