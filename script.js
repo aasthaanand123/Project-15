@@ -32,7 +32,7 @@ let createElements = function (countries) {
 let call_info = [];
 //function for api call on window loading
 let load = async function () {
-  let call_one = await fetch("https://restcountries.eu/rest/v2/all");
+  let call_one = await fetch("https://restcountries.com/v2/all");
   call_info = await call_one.json();
 
   createElements(call_info);
